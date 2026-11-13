@@ -1,0 +1,51 @@
+:root{color-scheme:light;--paper:#f7f8f3;--white:#fff;--ink:#1c322c;--muted:#5a6b63;--green:#276349;--line:#dce4da;--soft:#e9f0e5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;font-size:16px;line-height:1.9;-webkit-font-smoothing:antialiased}
+a{color:var(--green);text-underline-offset:.25em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid #ce9d24;outline-offset:5px;border-radius:2px}
+.wrap{width:min(1080px,calc(100% - 80px));margin-inline:auto}
+.header{display:flex;align-items:center;justify-content:space-between;gap:28px;padding-block:27px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font-size:16px;line-height:1.35;font-weight:700;white-space:nowrap}
+.mark{display:grid;place-items:center;width:43px;height:43px;border-radius:15px 15px 15px 4px;background:var(--green);color:white;font-size:26px;font-weight:700}
+.brand-sub{display:block;font-size:12px;letter-spacing:.16em;color:var(--muted);font-weight:500;margin-top:5px}
+nav{display:flex;gap:25px;flex-wrap:wrap;font-size:13px}
+nav a{color:var(--muted);text-decoration:none;padding-block:8px}
+nav a[aria-current="page"]{color:var(--green);font-weight:700;border-bottom:2px solid var(--green)}
+.skip{position:absolute;left:16px;top:-70px;background:white;padding:8px 20px;z-index:10}
+.skip:focus{top:12px}
+.hero{padding:84px 0 64px;max-width:900px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--green);margin:0 0 17px}
+h1,h2,h3,p{overflow-wrap:anywhere}
+h1{font-size:clamp(32px,4.5vw,51px);line-height:1.55;letter-spacing:.015em;margin:0 0 25px;font-weight:750}
+.lead{font-size:18px;line-height:2;max-width:720px;color:var(--muted);margin:0 0 25px}
+.hero-note{font-size:12px;color:var(--muted);margin:0}
+.section{padding:48px 0}
+.section-heading{margin-bottom:27px}
+h2{font-size:25px;line-height:1.7;margin:0 0 18px;letter-spacing:.015em}
+h3{font-size:17px;line-height:1.7;margin:19px 0 12px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:17px;padding:28px}
+.number{font-size:13px;color:var(--green);letter-spacing:.08em;display:inline-block;padding-bottom:6px;border-bottom:1px solid var(--green)}
+.card p{font-size:14px;line-height:2;color:var(--muted);margin:0}
+.how{display:grid;grid-template-columns:.95fr 1.3fr;gap:65px;margin-top:16px;border-top:1px solid var(--line)}
+.how h2{font-size:29px}
+.prose{font-size:15px;line-height:2.1}
+.prose p{margin:0 0 18px}
+.notice{background:var(--soft);padding:28px 35px;border-radius:16px;margin:10px 0 0;border-left:4px solid var(--green)}
+.notice h2{font-size:17px;margin:0 0 10px}
+.notice p{font-size:14px;line-height:2;margin:0}
+.contact{display:grid;grid-template-columns:.95fr 1.3fr;gap:65px;margin:18px 0}
+.footer{padding:26px 0 32px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:24px;color:var(--muted);font-size:12px}
+.footer div{display:flex;gap:22px;flex-wrap:wrap}
+.footer a{color:var(--muted)}
+.document{max-width:860px;padding-top:65px;padding-bottom:60px}
+.document h1{font-size:clamp(28px,3.8vw,38px);margin-bottom:12px}
+.updated{font-size:12px;color:var(--muted);margin:0 0 40px}
+.document .prose{font-size:15px}
+.document h2{font-size:21px;margin:35px 0 14px;padding-top:22px;border-top:1px solid var(--line)}
+.document ul{padding-left:1.5em;margin:0 0 20px}
+.document li{padding-left:.2em;margin-bottom:8px}
+@media(max-width:760px){.wrap{width:calc(100% - 40px)}.header{align-items:flex-start;flex-direction:column;gap:16px;padding-block:22px}nav{gap:22px;font-size:12px}.hero{padding:50px 0 30px}.hero h1{font-size:31px}.lead{font-size:16px}.cards{grid-template-columns:1fr;gap:14px}.card{padding:24px}.section{padding:34px 0}.how,.contact{grid-template-columns:1fr;gap:8px}.how h2{font-size:25px}.how h2 br{display:none}.notice{padding:24px}.footer{flex-direction:column;gap:14px}.footer div{gap:18px}.document{padding-top:40px;padding-bottom:40px}.document .prose{font-size:14px}.document h2{font-size:19px}.eyebrow{font-size:11px}.desktop-break{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
